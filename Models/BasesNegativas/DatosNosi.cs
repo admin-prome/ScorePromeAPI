@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ScorePromeAPI.Models;
+namespace ScorePromeAPI.Models.BasesNegativas;
 
 public partial class DatosNosi
 {
@@ -362,4 +362,148 @@ public partial class DatosNosi
     public DateTime? CreatedAt { get; set; }
 
     public DateTime? UpdatedAt { get; set; }
+
+    public string? Ci12mSit4CantBcos { get; set; }
+
+    public string? CiVigSit4CantBcos { get; set; }
+
+    public string? CiVigSit4Monto { get; set; }
+
+    public string? ComSoEs { get; set; }
+
+    public string? DpDeudorPrevEs { get; set; }
+
+    public string? FaTiene { get; set; }
+
+    public string? FexBcraFecAct { get; set; }
+
+    public string? Hc12mOtNoPagCant { get; set; }
+
+    public string? Hc6mSfPagCant { get; set; }
+
+    public string? InVigPagoMulta6mTiene { get; set; }
+
+    public string? InVigPagoMultaTiene { get; set; }
+
+    public string? Ju60mTotalCantidad { get; set; }
+
+    public string? Oj12mLevCant { get; set; }
+
+    public string? Oj24mLevCant { get; set; }
+
+    public string? Oj24mNoLevCant { get; set; }
+
+    public string? Oj60mLevCant { get; set; }
+
+    public string? Oj60mNoLevCant { get; set; }
+
+    public string? OjVigEmbCant { get; set; }
+
+    public string? OjVigEmbMonto { get; set; }
+
+    public string? Pq60mRzCant { get; set; }
+
+    public string? RcVigComercioVentaHogarCant { get; set; }
+
+    public string? RcVigComercioVentaOtrosCant { get; set; }
+
+    public string? RcVigComercioVentaUtilCant { get; set; }
+
+    public string? RcVigDetalle { get; set; }
+
+    public string? ViEdadMenorEs { get; set; }
+
+    public string? CiVigLargoPlazo { get; set; }
+
+    public string? CiVigCortoPlazo { get; set; }
+
+    public string? Ap24mEmpleadorImpagosCant { get; set; }
+
+    public string? Ap24mEmpleadorPagoParcialCant { get; set; }
+
+    public string? CiVigLiCcMonto { get; set; }
+
+    public string? CiVigLiHiMonto { get; set; }
+
+    public string? CiVigLiHiUvaMonto { get; set; }
+
+    public string? CiVigLiOprUvaMonto { get; set; }
+
+    public string? CiVigLiOtMonto { get; set; }
+
+    public string? CiVigLiOtUvaMonto { get; set; }
+
+    public string? CiVigLiPpMontoTotal { get; set; }
+
+    public string? CiVigLiPpMontoTotalV2 { get; set; }
+
+    public string? CiVigLiPpUvaCant { get; set; }
+
+    public string? CiVigLiPpUvaMonto { get; set; }
+
+    public string? CiVigLiPrMonto { get; set; }
+
+    public string? CiVigLiPrMontoTotal { get; set; }
+
+    public string? CiVigMontoSit3oMas { get; set; }
+
+    public string? CiVigSit1CantBcos { get; set; }
+
+    public string? CiVigSit1Monto { get; set; }
+
+    public string? CiVigSit2CantBcos { get; set; }
+
+    public string? CiVigSit2Monto { get; set; }
+
+    public string? CiVigSit3CantBcos { get; set; }
+
+    public string? CiVigSit3Monto { get; set; }
+
+    public string? CiVigSit5CantBcos { get; set; }
+
+    public string? CiVigSit5Monto { get; set; }
+
+    public string? CiVigSit6CantBcos { get; set; }
+
+    public string? CiVigSit6Monto { get; set; }
+
+    public string? Hc12mOtNoPagMonto { get; set; }
+
+    public string? Hc12mOtPagMonto { get; set; }
+
+    public string? Hc12mSfMonto { get; set; }
+
+    public string? Hc1mSfNoPagMonto { get; set; }
+
+    public string? Hc24mNoPagCant { get; set; }
+
+    public string? Hc24mSfNoPagCant { get; set; }
+
+    public string? Hc24mSfNoPagMonto { get; set; }
+
+    public string? Hc3mSfMonto { get; set; }
+
+    public string? Hc3mSfNoPagMonto { get; set; }
+
+    public string? Hc3mSfPagMonto { get; set; }
+
+    public string? Hc6mOtNoPagCant { get; set; }
+
+    public string? Hc6mOtNoPagMonto { get; set; }
+
+    public string? Hc6mSfMonto { get; set; }
+
+    public string? Hc6mSfNoPagMonto { get; set; }
+
+    public string? Hc6mSfPagMonto { get; set; }
+
+    public string? Hc6mSfSinPagMultaMonto { get; set; }
+
+    public string? In24mPagoMultaTiene { get; set; }
+
+    public string? Oj60mNoLevMonto { get; set; }
+
+    public string? ViAct01Descrip { get; set; }
+
+    public string? ViAct01Sector { get; set; }
 }
