@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using ScorePromeAPI.Business.ScoreNosis;
+using ScorePromeAPI.Models.Context;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -6,6 +10,14 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+var connectionString = builder.Configuration.GetConnectionString("BasesNegativas");
+builder.Services.AddDbContext<BasesNegativasContext>(options =>
+{
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
+
+builder.Services.AddScoped<DatosNosisBusiness, DatosNosisBusiness>();
 
 var app = builder.Build();
 

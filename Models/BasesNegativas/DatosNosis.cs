@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ScorePromeAPI.Models.BasesNegativas;
 
-public partial class DatosNosi
+public partial class DatosNosis
 {
     public ulong IdConsultaNosis { get; set; }
 
