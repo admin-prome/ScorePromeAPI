@@ -11,9 +11,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var connectionString = builder.Configuration.GetConnectionString("BasesNegativas");
+var connectionString = Environment.GetEnvironmentVariable("BasesNegativas");
 builder.Services.AddDbContext<BasesNegativasContext>(options =>
 {
+    Console.WriteLine($"Cadena de Conexión: {connectionString}");
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 
