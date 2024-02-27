@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using ScorePromeAPI.APIKey;
 using ScorePromeAPI.Business.ScoreNosis;
 using ScorePromeAPI.Models.Context;
 
@@ -20,6 +21,8 @@ builder.Services.AddDbContext<BasesNegativasContext>(options =>
 
 builder.Services.AddScoped<DatosNosisBusiness, DatosNosisBusiness>();
 
+var validApiKey = Environment.GetEnvironmentVariable("APIKeyBN");
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -32,6 +35,8 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<APIKeyMiddleware>(validApiKey);
 
 app.MapControllers();
 
